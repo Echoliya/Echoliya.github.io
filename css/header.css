@@ -1,0 +1,56 @@
+header {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.top {
+	line-height: 2.5rem;
+	margin-right: 5%;
+}
+
+.top span {
+	text-align: left;
+	font-size: 1rem;
+	margin-left: 5%;
+	margin-top: 0.4%;
+	color: #29b078;
+}
+
+.top img {
+	float: right;
+	margin-top: 0.4%;
+
+}
+
+.middle {
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	line-height: 6.25rem;
+	width: 100%;
+	background-color: #29b078;
+	paddinf-right: 5%;
+}
+
+.skilltree {
+	overflow: visible;
+	float: left;
+	padding-left: 5%;
+}
+
+
+.link a {
+	float: none;
+	font-size: 0.625rem;
+	text-align: center;
+	color: #fff;
+	margin-left: 1.5rem;
+	text-decoration: none;
+}
+
+.link :hover {
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
