@@ -1,0 +1,17 @@
+.bg img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.link-a {
+	display: flex;
+	flex-direction: row;
+}
+
+.link-a a:hover {
+	color: #29b078;
+}
+
+.lin-a a {
+	text-decoration: none;
+}

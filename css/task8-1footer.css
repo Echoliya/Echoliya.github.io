@@ -1,0 +1,92 @@
+/* 添加小圆点 */
+.friend-links a::before {
+	content: "·";
+	margin-right: 5px;
+	color: #666;
+}
+
+@media (max-width: 500px) {
+	.friend-links .col-xs-6 {
+		width: 50%;
+		float: left;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.friend-links.row {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+}
+
+.friend-links a:hover {
+	color: pink;
+}
+
+/* 适配中等屏幕 */
+@media (min-width: 992px) {
+	.friend-links .col-md-10per {
+		width: 10%;
+		float: left;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-sm-3 {
+		width: 33.33333%;
+		float: left;
+	}
+}
+
+h2 {
+	margin-bottom: 2rem;
+}
+
+.friend-links a {
+	display: block;
+	padding: 5px 15px;
+	color: #333;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+.footer-top {
+	background-color: #26a26f;
+	padding: 30px 0;
+	color: white;
+	text-align: center;
+}
+
+.footer-top dt h6 {
+	font-size: 14px;
+}
+
+.footer-top dl {
+	line-height: 2;
+}
+
+.footer-top dt,
+.footer-top dd {
+	display: inline;
+}
+
+.footer-top dd a {
+	color: white;
+	font-size: 10px;
+}
+
+.footer-top .foot-links {
+	margin: 0 auto;
+}
+
+.footer-copyright {
+	background-color: #29b078;
+	border-top: 1px solid #239562;
+	padding: 10px;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+}
