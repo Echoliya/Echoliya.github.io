@@ -1,5 +1,10 @@
+main {
+	margin-bottom: 10rem;
+}
+
 .bg img {
 	width: 100%;
+	height: auto;
 	object-fit: cover;
 }
 
@@ -9,6 +14,10 @@
 }
 
 .link-a a:hover {
+	color: #29b078;
+}
+
+.link-a a:visited {
 	color: #29b078;
 }
 

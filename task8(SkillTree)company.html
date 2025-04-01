@@ -18,32 +18,32 @@
 
 		<link rel="stylesheet" href="css/task8-2index.css" />
 		<link rel="stylesheet" href="css/task8-2header.css" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/task8-2main.css" />
 		<link rel="stylesheet" href="css/task8-2footer.css" />
 		<title>task8战略合作伙伴</title>
 		<style>
-			.container-py-4 {
-				background-color: #fafafa;
-			}
-
 			.left-column {
 				background-color: #fff;
-				padding: 20px;
-				border-right: 1px solid #eee;
-				/* 添加分割线 */
+				border: 1px solid #e6e6e6;
+				position: relative;
+				padding-right: 10px;
 			}
 
 			.right-column {
 				background-color: #fff;
+				border: 1px solid #e6e6e6;
 				padding: 20px;
 			}
 
 			.partner-item {
 				position: relative;
-				padding-left: 1.5rem;
+				padding-left: 45%;
 				margin: 8px 0;
 				cursor: pointer;
 				transition: all 0.3s;
+				width: 30rem;
+				text-align: left;
+
 			}
 
 			.partner-item:hover {
@@ -53,7 +53,7 @@
 			.partner-item::before {
 				content: '';
 				position: absolute;
-				left: 30%;
+				left: 16%;
 				top: 50%;
 				transform: translateY(-50%);
 				width: 8px;
@@ -61,6 +61,8 @@
 				border: 2px solid orange;
 				border-radius: 50%;
 			}
+
+
 
 			.partner-item.active::before {
 				background-color: orange;
@@ -72,6 +74,10 @@
 				margin-bottom: 20px;
 			}
 
+			.company-intro p {
+				opacity: 0.6;
+			}
+
 			.company-intro img {
 				width: 150px;
 				height: auto;
@@ -81,19 +87,10 @@
 			@media (max-width: 500px) {
 				.left-column {
 					border-right: none;
-					margin-right: 2rem;
-				}
-
-				.right-column {
-					margin-left: 2rem;
 				}
 			}
 
 			.mb-3 {
-				text-align: center;
-			}
-
-			.partner-item {
 				text-align: center;
 			}
 
@@ -104,11 +101,14 @@
 
 			.mb-4 {
 				text-align: center;
+				padding-top: 25px;
 			}
 
 			.text p {
+				opacity: 0.6;
 				text-indent: 2em;
 			}
+
 
 			.left-column {
 				background-color: #fff;
@@ -119,10 +119,9 @@
 			.right-column {
 				background-color: #fff;
 				padding-bottom: 2rem;
-				/* 右侧更多延伸 */
 			}
 
-			/* 取消等高效果 */
+
 			.row {
 				align-items: flex-start;
 			}
@@ -180,14 +179,15 @@
 				<div class="row-link">
 					<div class="link-a">
 						<a class="link-left">首页></a>
-						<a class="link-right">合作企业</a>
+						<a href="#" class="link-right">合作企业</a>
 					</div>
 				</div>
 				<div class="container-py-4">
-					<div class="row">
+					<div class="row ">
 						<!-- 左侧列 -->
+
 						<div class="col-12 col-md-4 col-lg-3 left-column">
-							<h2 class="mb-4">合作企业</h2>
+							<h4 class="mb-4">合作企业</h4>
 							<div class="d-flex flex-column">
 								<div class="partner-item">阿里巴巴</div>
 								<div class="partner-item">腾讯视频</div>
@@ -205,6 +205,7 @@
 						</div>
 
 						<!-- 右侧列 -->
+
 						<div class="col-12 col-md-8 col-lg-9 right-column">
 							<div class="company-intro">
 								<img src="img/task8potato.png" alt="土豆网logo">
