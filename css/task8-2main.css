@@ -1,0 +1,214 @@
+main {
+	margin-bottom: 10rem;
+}
+
+.bg img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.link-a {
+	display: flex;
+	flex-direction: row;
+}
+
+.link-a a:hover {
+	color: #29b078;
+}
+
+.link-a a:visited {
+	color: #29b078;
+}
+
+.lin-a a {
+	text-decoration: none;
+}
+
+/* container-row */
+@media (min-width: 768px) {
+	.container-row {
+		flex-direction: row;
+	}
+
+	.left {
+		flex: 0 0 240px;
+		height: fit-content;
+		position: sticky;
+		top: 20px;
+	}
+
+	.right {
+		flex: 1;
+		min-width: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.container-row {
+		flex-direction: column;
+	}
+
+	.left,
+	.right {
+		width: 100%;
+		flex: none;
+	}
+
+	.company-intro {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.container-row {
+	display: flex;
+	gap: 30px;
+}
+
+.left-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 1px solid #e6e6e6;
+	font-size: 1.6rem;
+}
+
+.left {
+	background-color: #fff;
+	flex: 0 0 240px;
+	padding: 0;
+	top: 20px;
+}
+
+.right {
+	background-color: #fff;
+	flex: 1;
+	min-width: 0;
+}
+
+.flex-column {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.text {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.text p {
+	margin-bottom: 1rem;
+}
+
+
+.partner-item {
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 1rem;
+	padding-bottom: 10px;
+	width: 8rem;
+	color: #29b078;
+}
+
+.company-intro {
+	display: flex;
+	gap: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.company-intro img {
+	flex: 0 0 160px;
+	height: auto;
+	object-fit: contain;
+}
+
+.right-text p {
+	font-size: 1rem;
+	line-height: 1.8;
+}
+
+.company-intro p,
+.right p {
+	opacity: 0.6;
+	text-indent: 25px;
+}
+
+.partner-item {
+	position: relative;
+	padding-left: 1.5em;
+	line-height: 1.6;
+}
+
+.partner-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.5em;
+	width: 10px;
+	height: 10px;
+	border: 2px solid orange;
+	border-radius: 50%;
+	background-color: transparent;
+	box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+	.partner-item::before {
+		width: 10px;
+		height: 10px;
+		top: 0.6em;
+	}
+}
+
+
+.partner-item:nth-child(3)::before {
+	background-color: orange;
+	border-color: orange;
+	width: 10px;
+	height: 10px;
+	box-shadow: none;
+}
+
+
+.partner-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.5em;
+	width: 10px;
+	height: 10px;
+	border: 2px solid orange;
+	border-radius: 50%;
+	background-color: transparent;
+	box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+	.partner-item:nth-child(3)::before {
+		top: 0.6em;
+		width: 10px;
+		height: 10px;
+	}
+}
